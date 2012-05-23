@@ -3,9 +3,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Zebra-Stripe Table</title>
+<style type="text/css">
+.striped {
+	background:#CCC;
+}
+table{
+	width: 300px;
+}
+table tr th{
+	background: #666;
+}
+table tr{
+	background:#3CF;
+}
+td {
+	padding: 2px;
+}
+</style>
 <script type="text/javascript" src="jquery-1.7.2.js"></script>
 <script type="text/javascript">
-
+$(document).ready(function(e) {
+  $("table tr:nth-child(even)").addClass("striped");
+});
 </script>
 </head>
 
